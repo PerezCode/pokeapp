@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0610a09ddb82bced9205c7c03fb0095e",
+    "revision": "c1dc723854dc11bd0a8c2bee0b76159a",
     "url": "/pokeapp/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pokeapp/static/js/2.931cece4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6a95cbc60c2a9eb36cd0",
-    "url": "/pokeapp/static/js/main.6efc2b11.chunk.js"
+    "revision": "586d01c93e25e13e5bfd",
+    "url": "/pokeapp/static/js/main.d6006f0c.chunk.js"
   },
   {
     "revision": "969db64b723a4e9f3748",
