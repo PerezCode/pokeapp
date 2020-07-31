@@ -1,26 +1,24 @@
 import styled from "styled-components";
-import { Link as Card } from "react-router-dom";
 
-export const Link = styled(Card)`
-  height: min-content;
-  margin: 15px;
-  font-family: 'Poppins', sans-serif;
-  text-decoration: none;
-  transition: .5s;
-  &:hover {
-    transform:scale(1.1);
-  }
-`
 export const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   width: 250px;
+  height: min-content;
+  margin: 15px;
   padding: 15px 5px;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
   border-radius: 10px;
   background: white;
   box-shadow: 0px 2px 12px 1px #191919;
+  transition: .5s;
+  cursor: pointer;
+  &:hover {
+    transform:scale(1.1);
+  }
 `
 export const Name = styled.h2`
   margin: 0;

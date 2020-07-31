@@ -74,12 +74,12 @@ export const NextButton = styled.button`
   }
 `
 export const PreviousArrow = styled.img`
-  width: 20%;
+  width: 30%;
   margin: 0 10px;
   transform: rotate(-90deg);
 `
 export const NextArrow = styled.img`
-  width: 20%;
+  width: 30%;
   margin: 0 10px;
   transform: rotate(90deg);
 `

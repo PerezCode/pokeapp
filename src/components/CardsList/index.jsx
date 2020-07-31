@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Header } from "..//Header/index";
 import { CardsListContainer, LoaderContainer, LoaderImg, LoaderText, Buttons, PreviousButton, NextButton, PreviousArrow, NextArrow} from "./styles";
 import { Card } from "../Card/index";
+import { Modal } from "../Modal/index";
 import ImgArrow from "../../images/pokemon-arrow.png";
 import Loading from "../../images/simple_pokeball.gif";
 
@@ -11,12 +12,12 @@ export const CardsList = (props) => {
   const [previousPokemons, setPreviousPokemons] = useState(null);
   const [pokemonsUrls, setPokemonsUrls] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [modalState, setModalState] = useState({data: {}, isOpen: false});
 
   const fetchData = async (URL) => {
     setLoading(true)
     const response = await fetch(URL);
     const data = await response.json();
-    console.log("Data; ", data);
     setNextPokemons(data.next);
     setPreviousPokemons(data.previous);
     setPokemonsUrls(data.results.map(pokemon => pokemon.url));
@@ -32,6 +33,14 @@ export const CardsList = (props) => {
     if(nextPokemons) {
       fetchData(nextPokemons)
     }
+  }
+
+  const handleOpenModal = (data) => {
+    setModalState({data, isOpen: true});
+  }
+
+  const handleCloseModal = () => {
+    setModalState({data: {}, isOpen: false});
   }
 
   useEffect(() => {
@@ -66,7 +75,7 @@ export const CardsList = (props) => {
         : <React.Fragment>
           <Header />
           <CardsListContainer>
-            { pokemons.map(pokemon => <Card key={pokemon.name} data={pokemon}/>) }
+            {pokemons.map(pokemon => <Card key={pokemon.id} data={pokemon} openModal={handleOpenModal}/>) }
           </CardsListContainer>
           <Buttons>
             <PreviousButton onClick={handlePreviousPokemons}>
@@ -78,6 +87,7 @@ export const CardsList = (props) => {
               <NextArrow src={ImgArrow}/>
             </NextButton>
           </Buttons>
+          <Modal isOpen={modalState.isOpen} closeModal={handleCloseModal} data={modalState.data}/>
         </React.Fragment>
       }
     </React.Fragment>
