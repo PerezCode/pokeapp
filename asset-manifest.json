@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/pokeapp/static/js/main.6efc2b11.chunk.js",
+    "main.js.map": "/pokeapp/static/js/main.6efc2b11.chunk.js.map",
+    "runtime-main.js": "/pokeapp/static/js/runtime-main.3375603f.js",
+    "runtime-main.js.map": "/pokeapp/static/js/runtime-main.3375603f.js.map",
+    "static/js/2.931cece4.chunk.js": "/pokeapp/static/js/2.931cece4.chunk.js",
+    "static/js/2.931cece4.chunk.js.map": "/pokeapp/static/js/2.931cece4.chunk.js.map",
+    "index.html": "/pokeapp/index.html",
+    "precache-manifest.4dd545b326d4f00f03fa437e2057340c.js": "/pokeapp/precache-manifest.4dd545b326d4f00f03fa437e2057340c.js",
+    "service-worker.js": "/pokeapp/service-worker.js",
+    "static/js/2.931cece4.chunk.js.LICENSE.txt": "/pokeapp/static/js/2.931cece4.chunk.js.LICENSE.txt",
+    "static/media/404.png": "/pokeapp/static/media/404.5d9c284c.png",
+    "static/media/pokemon-arrow.png": "/pokeapp/static/media/pokemon-arrow.01f28b7e.png",
+    "static/media/pokemon-logo.png": "/pokeapp/static/media/pokemon-logo.8859e86f.png",
+    "static/media/simple_pokeball.gif": "/pokeapp/static/media/simple_pokeball.f6a3ec2c.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3375603f.js",
+    "static/js/2.931cece4.chunk.js",
+    "static/js/main.6efc2b11.chunk.js"
+  ]
+}
