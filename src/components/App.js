@@ -9,6 +9,7 @@ export const App = () => {
       <Switch>
         <Route exact path="/" component={Main}/>
         <Route exact path="/pokemons" component={Main}/>
+        <Route exact path="/pokeapp" component={Main}/>
         <Route component={NotFound}/>
       </Switch>
     </BrowserRouter>
